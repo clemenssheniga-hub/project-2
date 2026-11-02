@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body{  margin: 0;background-color: #FFFCF9;}
+
+h1{color: #F9074D;font-family: "Roboto Condensed", sans-serif;}
+p{  font-family: "Inter", sans-serif;}
+a{text-decoration: none; color: black;  font-size: 15px;}
+.navbar ul  a.active {
+    color: #F9074D;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+ width:100%;
+  background: #FFF4EA;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+
+}
+
+header{margin-top: 15px;}
+.navbar ul {margin-left: 250px;
+  display: flex;
+  list-style: none;
+  gap: 80px;
+ font-family: "Inter", sans-serif;
+  color: #FFF3E0 ;
+font-weight: bold;
+font-size: 15px;
+ transition-duration:300ms;
+  cursor:pointer;
+ 
+}
+
+.navbar ul a:hover {
+    color: #F9074D;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+
+
+/* Hamburgerknop standaard verbergen */
+.navbar-toggler {
+    display: none;
+}
+
+/* Kleine schermen */
+@media (max-width: 991px) {
+    .navbar{display: none;}
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar-toggler {
+        display: block;
+    
+        background-color: transparent;
+        padding: 6px 10px;
+    }
+
+    .navbar-toggler-icon { margin-top: 30px;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23F9074D' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar-collapse {font-family: "Inter", sans-serif; color: #F9074D;
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0 0;
+           
+    }
+     .index {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .hobbys,
+    .cv {
+        width: 90%;
+    }
+
+    .hobby {
+        margin-left: 0;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .tekst {
+        margin-left: 0;
+        width: 45%;
+    }
+
+    .fotos {
+        width: 50%;
+    }
+
+    .hobby img {
+        width: 220px;
+        max-width: 100%;
+        height: 180px;
+    }
+
+    .hobby-tekst {
+        width: 100%;
+    }
+
+    .cv-kolommen {
+        column-gap: 40px;
+    }
+
+    .contact {
+        padding: 35px 5%;
+    }
+
+    .contact-form {
+        width: 85%;
+    }
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.index{margin-left: 200px;margin-right: 200px;}
+.hobby{
+margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;}
+.tekst { margin-left: 60px;
+    width: 30%;
+}
+.fotos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+     height: auto;
+    object-fit: cover;
+}
+
+
+/* HOBBY SLIDER */
+.hobby-slider {
+    width: 80%;
+    max-width: 850px;
+    margin: 60px auto;
+}
+
+.hobby-slider h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #F9074D;
+    font-size: 30px;
+}
+
+.hobby-slider > p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#hobbyCarousel {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#hobbyCarousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#hobbyCarousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#hobbyCarousel .carousel-caption h5 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#hobbyCarousel .carousel-caption p {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+}
+.cv {
+    width: 80%;
+    max-width: 850px;
+    margin: 50px auto;
+    padding-bottom: 100px;
+}
+
+.cv h1 {font-family: "Roboto Condensed", sans-serif;
+    color: #F9074D;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.naam {font-family: "Roboto Condensed", sans-serif;
+    color: #F9074D;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.contact {
+    margin-top: 25px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.contact p {
+    margin-bottom: 15px;
+}
+
+.over-mij {
+    width: 70%;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.cv h2 { font-family: "Roboto Condensed", sans-serif;
+    color: #F9074D;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.opleiding {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.opleiding p { font-family: "Inter", sans-serif;
+    margin-bottom: 25px;
+}
+
+.cv-kolommen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    margin-top: 35px;
+}
+
+.cv-kolommen p,
+.talen p { font-family: "Inter", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.talen {
+    margin-top: 25px;
+}
+
+
+
+/* Contactgedeelte */
+.contact {
+    padding: 45px 7.5% 70px;
+}
+
+.contact h1,  .ervaring h2  {font-family: "Roboto Condensed", sans-serif;
+    color: #ff3366;
+    font-size: 30px;
+    font-weight:bold;
+    margin-bottom: 27px;
+}
+
+.intro {
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 450px;
+    margin-left: 3px;
+}
+
+/* Contactgegevens */
+.gegevens {
+    margin: 36px 0 37px 12px;
+    font-size: 11.5px;
+    line-height: 18px;
+}
+
+.gegevens a {
+    color: #111;
+    text-decoration: none;
+}
+
+.gegevens a:first-of-type {
+    text-decoration: underline;
+}
+
+/* Contactformulier */
+.contact-form {
+    width: 75%;
+    max-width: 394px;
+    min-height: 286px;
+    margin: 0 auto;
+    padding: 32px 45px 17px;
+    background-color: #ffd0db;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+}
+
+.namen {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #fff3e9;
+    border: none;
+    outline: none;
+    padding: 8px 13px;
+  font-family: "Inter", sans-serif;
+    font-size: 12px;
+    color: #111;
+}
+
+.namen input {
+    width: 50%;
+    min-width: 0;
+    height: 27px;
+}
+
+.contact-form > input {
+    width: 100%;
+    height: 28px;
+    margin-top: 0;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 82px;
+    resize: vertical;
+    margin-top: -1px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #b8aaa5;
+}
+
+.contact-form button {
+    width: 115px;
+    height: 20px;
+    margin-top: 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff3e9;
+    color: #b8aaa5;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+    color: #ff3366;
+}
+
+/* Mobiele weergave */
+@media (max-width: 600px) {
+     .hobby-slider {
+        width: 90%;
+        margin: 35px auto;
+    }
+
+    #hobbyCarousel img {
+        height: 230px;
+    }
+
+    #hobbyCarousel .carousel-caption p {
+        font-size: 11px;
+    }
+     .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-socials {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+     .index {
+        margin: 20px;
+    }
+
+    /* Hobby / Over mij */
+    .hobbys {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .hobbys h1 {
+        font-size: 25px;
+    }
+
+    .hobbys .intro {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .hobby {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 0;
+        margin: 0 0 30px;
+        gap: 15px;
+    }
+
+    .tekst {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .fotos {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .hobby img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .hobby-tekst {
+        width: 100%;
+        min-height: auto;
+        padding: 18px;
+    }
+
+    /* Curriculum Vitae */
+    .cv {
+        width: 90%;
+        margin: 30px auto;
+        padding-bottom: 40px;
+    }
+
+    .cv h1 {
+        font-size: 25px;
+    }
+
+    .cv-kolommen {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 20px;
+    }
+
+    .over-mij {
+        width: 100%;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 30px 6%;
+    }
+
+    .contact h1 {
+        font-size: 26px;
+    }
+
+    .contact .intro {
+        width: 100%;
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .gegevens {
+        margin-left: 0;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 18px;
+        gap: 18px;
+        box-sizing: border-box;
+    }
+
+    .namen {
+        gap: 10px;
+    }
+
+    .namen input {
+        width: 50%;
+    }
+
+    /* Ervaring */
+    .ervaring {
+        padding: 20px 15px;
+        min-height: auto;
+    }
+
+    .ervaring h2 {
+        font-size: 24px;
+    }
+
+    .ervaring p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .pagina {
+        width: 100%;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 20px;
+        align-items: flex-start;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contact {
+        padding: 35px 7%;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 28px 25px;
+    }
+
+    .namen {
+        gap: 12px;
+    }
+}
+.ervaring {
+    background-color: #fdfaf8;
+    padding: 20px 22px;
+    min-height: 190px;
+    font-family: Arial, sans-serif;
+  }
+
+  .ervaring p {font-family: "Inter", sans-serif;
+    color: #171717;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 38px;
+  }
+  @media (max-width: 991px) {
+    .navbar-collapse ul li a {
+        font-family: "Inter", sans-serif ;
+        color: #F9074D ;
+        font-weight: bold;
+font-size: 15px;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #FFF4EA;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+.footer-kolom p {
+    margin: 0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-socials a {
+    color: #F9074D;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    text-decoration: underline;
+}
+
+
+/* HERO SECTION */
+.hero {
+    background-color: #fdecef;
+    padding: 70px 10%;
+    text-align: center;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+.hero-tekst {
+    max-width: 750px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #F9074D;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.hero p {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 20px 0 30px;
+}
+
+.hero-knop {
+    display: inline-block;
+    background-color: #F9074D;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    transition: 0.3s;
+}
+
+.hero-knop:hover {
+    background-color: #d90640;
+    color: white;
+}
+
+
+/* PORTFOLIO CARDS */
+.portfolio-cards {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 25px;
+}
+
+.portfolio-cards h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #F9074D;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.portfolio-card {
+    background-color: #fff4ea;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.portfolio-card img:hover {
+    transform: scale(1.03);
+}
+
+.card-tekst {
+    padding: 20px;
+}
+
+.card-tekst h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #F9074D;
+    font-size: 20px;
+}
+
+.card-tekst p {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.card-tekst a {
+    color: #F9074D;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE STARTPAGINA */
+@media (max-width: 900px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        margin: 20px 15px;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .portfolio-cards {
+        margin: 35px auto;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-card img {
+        height: 200px;
+    }
+}
